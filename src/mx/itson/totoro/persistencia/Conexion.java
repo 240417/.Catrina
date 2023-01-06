@@ -15,13 +15,13 @@ import java.sql.DriverManager;
 public class Conexion {
     
     public Connection obtener(){
-        Connection conexion = null;
+        Connection Conexion = null;
         try{
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost/totorodb?user=root&password=Poke6470");
+            Conexion = DriverManager.getConnection("jdbc:mysql://localhost/totorodb?user=root&password=Poke6470");
         }catch(Exception e){
             System.err.println("Ocurrio un error: "+e.getMessage());
         }
-        return conexion;
+        return Conexion;
     }
     
 }
